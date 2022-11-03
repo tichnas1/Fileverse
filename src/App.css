@@ -23,6 +23,14 @@ body {
   color: #000;
   line-height: 1.5; }
 
+@keyframes loading-circle {
+  0% {
+    transform: scale(0.2);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
 main {
   background-color: #fff;
   padding: 2rem; }
@@ -76,3 +84,12 @@ main {
     font-size: 1.4rem; }
   .nft-card__address {
     font-size: 1.4rem; }
+
+.loading {
+  text-align: center;
+  margin: 2rem; }
+  .loading__circle {
+    fill: none;
+    stroke: #d6ba00;
+    animation: loading-circle 1s linear infinite;
+    transform-origin: center; }

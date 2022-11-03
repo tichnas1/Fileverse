@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Alchemy } from 'alchemy-sdk';
+import { toast } from 'react-toastify';
 
 import { alchemySettins } from '../../constants';
 import useWallet from '../../hooks/useWallet';
 import Button from '../Button';
 import NFTList from '../NFTList';
+import Loading from '../Loading';
 
 function WalletData() {
   // TODO: Alchemy SDK uses private API key, so build a server to serve frontend instead of direct Alchemy SDK query
@@ -24,6 +26,7 @@ function WalletData() {
       setNfts(nftsForOwner.ownedNfts);
     } catch (err) {
       console.error(err.message);
+      toast.error('Error getting NFTs');
     }
 
     setNftLoading(false);
@@ -47,7 +50,7 @@ function WalletData() {
       <p>Your account address: {data.address}</p>
       <p>Balance: {data.balance}</p>
 
-      {nftLoading && <p>NFTs Loading</p>}
+      {nftLoading && <Loading />}
       {nfts && <NFTList nfts={nfts} />}
     </div>
   );

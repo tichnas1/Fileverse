@@ -2,9 +2,11 @@
 
 @import 'base/base';
 @import 'base/typography';
+@import 'base/animations';
 
 @import 'layouts/containers';
 
 @import '../components/Navbar/navbar';
 @import '../components/Button/button';
 @import '../components/NFTList/nft-list';
+@import '../components/Loading/loading';

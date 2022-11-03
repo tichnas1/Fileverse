@@ -1,3 +1,6 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Navbar from './components/Navbar';
 import WalletData from './components/WalletData';
 
@@ -11,6 +14,8 @@ function App() {
       <main>
         <WalletData />
       </main>
+
+      <ToastContainer />
     </>
   );
 }

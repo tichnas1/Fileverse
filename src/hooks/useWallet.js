@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ethers } from 'ethers';
+import { toast } from 'react-toastify';
 
 function useWallet() {
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function useWallet() {
 
       setData({ address, balance });
     } else {
-      window.alert('Metamark extension not installed');
+      toast.error('Metamark extension not installed');
     }
 
     setLoading(false);
