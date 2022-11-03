@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &--disabled {
+    cursor: not-allowed;
+    background-color: $color-grey-1;
+  }
+}
