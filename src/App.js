@@ -1,7 +1,18 @@
+import Navbar from './components/Navbar';
+import WalletData from './components/WalletData';
+
 import './App.css';
 
 function App() {
-  return <h1>Fileverse</h1>;
+  return (
+    <>
+      <Navbar />
+
+      <main>
+        <WalletData />
+      </main>
+    </>
+  );
 }
 
 export default App;

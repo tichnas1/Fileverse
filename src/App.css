@@ -14,7 +14,7 @@ body {
 
 ::selection {
   color: #fff;
-  background-color: #fbaf03; }
+  background-color: #d6ba00; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -22,3 +22,13 @@ body {
   font-size: 1.6rem;
   color: #000;
   line-height: 1.5; }
+
+main {
+  background-color: #fff;
+  padding: 2rem; }
+
+.nav {
+  border-bottom: 1px solid #aaa;
+  padding: 1rem 3rem; }
+  .nav__title {
+    color: #d6ba00; }
