@@ -44,3 +44,35 @@ main {
   .btn--disabled {
     cursor: not-allowed;
     background-color: #aaa; }
+
+.nft-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 40rem));
+  row-gap: 2rem;
+  column-gap: 3rem; }
+
+.nft-card {
+  border: 1px solid #aaa;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+  .nft-card__heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .nft-card__balance {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: #d6ba00;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+    font-size: 1.4rem; }
+  .nft-card__address {
+    font-size: 1.4rem; }
